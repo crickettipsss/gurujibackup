@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GURU JI BACK-UP</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #050d20;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  width: 100%;
+  max-width: 700px;
+  min-height: 100svh;
+  margin: auto;
+  padding: 25px 18px 20px;
+  background:
+    radial-gradient(ellipse at 50% 20%, #003c50 0%, transparent 45%),
+    #050d20;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: clamp(23px, 6vw, 36px);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.live {
+  background: #00c978;
+  border-radius: 30px;
+  padding: 11px 18px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.tag {
+  margin-top: 60px;
+  text-align: center;
+  padding: 13px 8px;
+  border: 1px solid #34515d;
+  border-radius: 30px;
+  background: #ffffff12;
+  font-size: clamp(11px, 3vw, 16px);
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(29px, 7vw, 48px);
+  line-height: 1.2;
+  margin-top: 30px;
+}
+
+.blue {
+  color: #00d5ff;
+}
+
+.subtitle {
+  text-align: center;
+  color: #a7b7ca;
+  font-size: clamp(14px, 3.5vw, 20px);
+  line-height: 1.5;
+  margin-top: 18px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.stat {
+  background: #ffffff0d;
+  border: 1px solid #26384a;
+  border-radius: 22px;
+  padding: 18px 3px;
+  text-align: center;
+}
+
+.stat strong {
+  font-size: clamp(19px, 5vw, 28px);
+}
+
+.stat p {
+  color: #9baabd;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.features {
+  display: grid;
+  gap: 15px;
+  margin-top: 48px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 17px;
+  background: #ffffff0c;
+  border: 1px solid #27374a;
+  border-radius: 20px;
+}
+
+.emoji {
+  width: 62px;
+  height: 62px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  background: linear-gradient(135deg,#00d5f4,#007dff);
+  font-size: 29px;
+}
+
+.feature h3 {
+  font-size: 17px;
+}
+
+.feature p {
+  color: #9aa9bd;
+  font-size: 14px;
+  margin-top: 9px;
+}
+
+.bottom {
+  margin-top: auto;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.join {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 92px;
+  padding: 15px 8px;
+  border-radius: 60px;
+  background: linear-gradient(100deg,#00c9e9,#007bff);
+  color: white;
+  text-decoration: none;
+  font-size: clamp(17px, 4.5vw, 27px);
+  font-weight: bold;
+  border: 2px solid #00cfff;
+  animation: fullGlow 1.1s infinite alternate;
+  box-shadow: 0 0 12px #00dfff;
+}
+
+@keyframes fullGlow {
+  0% {
+    border-color: #00dfff;
+    box-shadow: 0 0 5px #00dfff, 0 0 12px #00aaff;
+  }
+  100% {
+    border-color: #ffffff;
+    box-shadow: 0 0 12px #00eaff,
+                0 0 28px #008cff,
+                0 0 42px #00dfff;
+  }
+}
+
+.checks {
+  color: #21b8d4;
+  font-size: 13px;
+  margin-top: 22px;
+  word-spacing: 5px;
+}
+
+.footer {
+  text-align: center;
+  color: #536176;
+  font-size: 11px;
+  line-height: 1.8;
+  margin-top: 55px;
+}
+
+@media(max-height: 750px) {
+  .tag { margin-top: 30px; }
+  h1 { margin-top: 22px; }
+  .stats { margin-top: 22px; }
+  .features { margin-top: 25px; }
+  .bottom { padding-top: 45px; }
+  .footer { margin-top: 30px; }
+}
+
+@media(max-width: 360px) {
+  .page { padding-left: 12px; padding-right: 12px; }
+  .feature { padding: 12px; }
+  .emoji { width: 50px; height: 50px; }
+  .join { min-height: 75px; }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="brand">GURU JI BACK-UP</div>
+    <div class="live">● LIVE MATCHES</div>
+  </div>
+
+  <div class="tag">
+    🔴 TODAY'S MATCH - TOSS + SESSION + MATCH
+  </div>
+
+  <h1>
+    Cricket Ka <span class="blue">Asli Boss</span> Yahi Hai
+  </h1>
+
+  <p class="subtitle">
+    Daily Cricket Updates, Toss Analysis,
+    Match Information & Live Updates
+  </p>
+
+  <div class="stats">
+    <div class="stat">
+      <strong>FREE</strong>
+      <p>JOINING</p>
+    </div>
+    <div class="stat">
+      <strong>LIVE</strong>
+      <p>UPDATES</p>
+    </div>
+    <div class="stat">
+      <strong>DAILY</strong>
+      <p>ANALYSIS</p>
+    </div>
+  </div>
+
+  <div class="features">
+
+    <div class="feature">
+      <div class="emoji">🏏</div>
+      <div>
+        <h3>Toss + Match</h3>
+        <p>Cricket Match Updates</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="emoji">🔥</div>
+      <div>
+        <h3>Session & Lambi Pari</h3>
+        <p>Every over update live</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="emoji">👑</div>
+      <div>
+        <h3>Cricket Analysis</h3>
+        <p>Daily Match Information</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="bottom">
+
+    <a class="join"
+       href="https://t.me/+lZrT_skyjNtlZjFl"
+       target="_blank">
+       🏆 JOIN CHANNEL NOW →
+    </a>
+
+    <div class="checks">
+      ✓ Free Join &nbsp; ✓ Fast Updates &nbsp; ✓ No Spam
+    </div>
+
+  </div>
+
+  <div class="footer">
+    FOR ENTERTAINMENT PURPOSES ONLY / 18+ ONLY
+    <br>
+    Cricket Updates & General Information
+  </div>
+
+</div>
+</body>
+</html>
